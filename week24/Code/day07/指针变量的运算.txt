@@ -1,0 +1,17 @@
+﻿# include <stdio.h>
+
+int main(void)
+{
+	int i = 5;
+	int j = 43;
+	int * p = &i;
+	int * q = &j;
+	int a[4];
+	p = &a[1];
+	q = &a[3];
+	printf("p和q所指向的单元相隔%d个单元\n", q-p);
+
+	//p-q;没有实际意义
+
+	return 0;
+}

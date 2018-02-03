@@ -1,0 +1,12 @@
+﻿# include <stdio.h>
+
+int main(void)
+{
+	// short int t=10.6; //表示变量t是整型变量，所谓整型变量就是指t只能存放整数，不能存放实数
+	// printf("%d\n",t);
+
+	char i='M';
+	printf("%\n",i);
+
+	return 0;
+}

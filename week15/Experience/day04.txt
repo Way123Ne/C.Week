@@ -1,0 +1,15 @@
+﻿			day04
+				2017/1/24
+Tue:视频学习
+PART:C
+心得：
+*循环
+1〉定义：某些代码会被重复执行
+2〉分类：
+	for
+
+	while
+		
+	do...while
+
+	break和continue

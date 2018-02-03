@@ -1,0 +1,29 @@
+﻿			day07
+				2016/12/2
+Fri:视频学习
+
+PART:C
+*C_概述_学习目标
+1>了解程序语言及发展历史
+2〉熟练掌握C语言的语法规则
+3〉掌握简单的算法
+4〉理解面向过程的思想，这非常有助于将来对面向对象思想的学习
+①能看懂程序 ②会调试程序 ③掌握将达问题转化为一系列小问题来求解的思想
+5〉为学习C++、数据结构，C#、Java打下良好的基础
+*C_概述_常见问题答疑
+①学习java为什么建议先学习C语言
+1]学习C就是在学Java,因为C言至少80%的语法知识都被Java继承过来了
+2]C是面向过程语言的代表，学好C有助于学习Java中面向对象的思想
+3]学好C中的指针是理解Java中引用的基础，如果不懂指针就不可能对Java中的
+  引用有深刻的理解，而引用是Java中一个最基本但又十分重要的概念
+②没学习过计算机专业课程能否学懂C语言
+③英语和数学不好能学好C？
+**C语言组成---关键字
+***32个关键字：（由系统定义，不能重做其他定义）
+auto  break  case   char   const  continue  default  do 
+double  else  enum   extern  float  for    goto    if
+int   long   register  return  short  signed   sizeof
+static  struct  switch  typedef   unsigned  union 
+void   volatile   while
+
+

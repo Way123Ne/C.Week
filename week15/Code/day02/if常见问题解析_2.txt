@@ -1,0 +1,11 @@
+﻿# include <stdio.h>
+
+int main(void)
+{
+	if (3 > 2) //第5行，如果这里加分号，则会导致程序编译到7行时就会出错，因为没有单独语句是else开头的
+		printf("哈哈\n");
+	else
+		printf("嘿嘿\n");
+
+	return 0;
+}

@@ -1,0 +1,24 @@
+﻿# include <stdio.h>
+
+int main(void)
+{
+	if (3 > 2)
+		printf("AAAA\n");
+	else if (4 > 6)
+		printf("BBBB\n");
+	else //(5 > 10); //无实际意义的语句
+		(5 > 10);
+		printf("CCCC\n");
+
+	return 0;
+	
+}
+
+/*
+	else (5 > 10)
+		printf("BBBB\n");
+	等价于
+	else 
+		(5 > 10);
+		printf("BBBB\n");
+*/

@@ -1,0 +1,33 @@
+﻿			day04
+				2016/12/27
+Tue:视频学习
+PART：C
+心得：
+*逻辑运算符
+1>!(非)  &&(并且)  ||(或)
+  !真         假
+  !假         真
+
+2>true&&true   true
+  true&&false  false
+  false&&true  false
+  false&&false false
+
+3>true||false  true
+  false||true  true
+  true||true   true 
+  false||false false
+
+4>C语言对真假的处理
+	非零是真	
+	零是假
+
+	真是1表示
+	假是0表示
+
+5>&&左边的表达式为假，右边的表达式肯定不会执行
+  ||左边的表达式为真，右边的表达式肯定不会执行
+
+*C_对初学运算符的一些建议
+1>不要去死记运算符的优先级别
+2〉举例：int k = (3+2*4) && (5||6-4) * 6;

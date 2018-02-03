@@ -1,0 +1,25 @@
+﻿# include <stdio.h>
+
+/*
+求1+1/2+1/3+1/4+.....1/100之和
+*/
+
+//C语言中两个int相除结果为int
+//a/b 结果为精度高的
+
+
+int main(void)
+{
+	int i;
+	float sum = 0;
+
+	for (i=1; i<=100; ++i)
+	{
+		sum = sum + 1 / (float)(i); //OK
+			//sum = sum + (float)(1/i);错误的写法
+			//更简单的写法: sum = sum + 1.0/i;
+	}
+	printf("sum = %f\n", sum); //float必须用%f输出
+
+	return 0;
+}

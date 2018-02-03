@@ -1,0 +1,19 @@
+﻿# include <stdio.h>
+
+int f(int i)
+{
+	return 8;
+}
+
+int main(void)
+{
+//	float i = 99.9;
+	int i;
+	int n;
+
+//	printf("%f\n", i);
+	i = f(n);
+	printf("%d\n", i);
+
+	return 0;
+}

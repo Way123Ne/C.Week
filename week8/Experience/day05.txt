@@ -1,0 +1,9 @@
+﻿			day05
+				2016/12/7
+Wed:视频学习
+
+PART:C
+*vc++6.0
+1>compile&build(Link)-->.exe
+2>! -->操作系统--cpu
+*win98,win min 操作系统可以直接访问硬件

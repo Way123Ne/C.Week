@@ -1,0 +1,7 @@
+﻿		day04
+			2017/2/21
+Tue:视频学习
+PART:C
+*while循环1 _ while概述 
+*while循环2 _ while执行顺序
+*for和while的比较 

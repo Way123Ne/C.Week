@@ -1,0 +1,49 @@
+﻿# include <stdio.h>
+
+void huhuan(int , int);
+void huhuan_2(int * , int *);
+void huhuan_3(int * , int *);
+
+void huhuan_3(int * p, int * q) //形参名字是p和q，接收实参数据的是p和q.
+{
+	int t; //如果要互换*p和*q的值，则t必须定义成int ,不能定义成 int *
+
+	t = *p; //p=&a,*p=a
+	*p = *q;
+	*q = t;
+
+}
+
+int main(void)
+{
+	int a = 3;
+	int b = 5;
+
+	huhuan_3(&a,&b);
+	printf("a = %d, b = %d\n", a, b);
+	
+	return 0;
+}
+
+void huhuan(int a, int b)
+{
+	int t;
+
+	t = a;
+	a = b;
+	b = t;
+
+	return;
+}
+
+void huhuan_2(int * p, int * q)
+{
+	int * t; //如果要互换p和q的值，则t必须是int *，不能是 int，否则会出错
+
+	t = p;
+	p = q;
+	q = t;
+
+	return;
+
+}

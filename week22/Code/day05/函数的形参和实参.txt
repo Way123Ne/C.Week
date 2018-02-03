@@ -1,0 +1,13 @@
+﻿# include <stdio.h>
+
+void f(int i, float x)
+{
+	printf("%d %lf\n", i,x);
+}
+
+int main(void)
+{
+	f(5,6.6);
+
+	return 0;
+}

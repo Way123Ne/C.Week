@@ -1,0 +1,20 @@
+﻿# include <stdio.h>
+
+void f(void); //先声明出f函数。如果不声明f函数会出现如下错误->下一个//.....
+
+void g(void)
+{
+	f(); //因为函数f的定义放在了调用f语句的后面，所以语法会出错
+}
+
+void f(void)
+{
+	printf("哈哈!\n");
+}
+
+int main(void)
+{
+	g();
+
+	return 0;
+}

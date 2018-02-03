@@ -1,0 +1,56 @@
+﻿/*
+	求：1到某个数字之间（包括该数字）在内的所有的素数，并将其输出
+	只用一个函数实现，不好，代码的利用率不高
+
+	解决办法:
+		用一个单独的函数判断一个数字是否是素数
+	优点：
+		代码比只用一个函数实现更容易理解
+		代码的可用性比只用一个函数实现更高
+*/
+
+# include <stdio.h>
+
+void TraverseVal(int n);
+bool IsPrime(int m);
+
+//本函数的功能是：把1到n之间的所有的素数在显示器上输出
+void TraverseVal(int n)
+{
+	int val;
+	int i;
+
+	for (i=2; i<=n; ++i)
+	{
+		if (IsPrime(i))
+			printf("%d\n", i);	
+	}
+
+}
+
+//本函数的功能是：判断m是否是素数，是返回true,不是返回false
+bool IsPrime(int m)
+{
+	int i;
+
+	for (i=2; i<m; ++i)
+	{
+		if (m%i==0)
+			break;
+	}
+	if (i == m)
+		return true;
+	else
+		return false;
+
+}
+
+int main(void)
+{
+	int val;
+
+	scanf("%d", &val);
+	TraverseVal(val);
+
+	return 0;
+}

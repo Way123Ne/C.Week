@@ -1,0 +1,24 @@
+﻿# include <stdio.h>
+
+void f(int i); //C语言中函数声明时可以不用写函数的形参
+
+void g()
+{
+	f(6);
+}
+void f(int i)
+{
+//	int i = 99;
+	
+	printf("i = %d\n", i);
+	return;
+}
+
+int main(void)
+{
+	int i = 10;
+
+	g();
+
+	return 0;
+}

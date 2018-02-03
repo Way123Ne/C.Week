@@ -1,0 +1,89 @@
+﻿		day03
+			2017/2/28
+Tue:视频学习
+PART:C
+心得：
+*switch琐碎非重点知识介绍
+	switch(i)
+	{
+		case 1: 语句A;
+
+		case 2: 语句B;
+
+		defalut:语句C
+
+		case 3: 语句D;
+	}
+
+说明：看懂电梯程序
+
+*break语句
+1>break和continue
+	break
+		break如果用于循环 那么是用来终止循环的
+		break如果用于switch,则是用来终止switch
+		break不能直接用于if,除非if属于循环内存的一个子句
+		例子：	
+			for (i=0; i<3; ++i)
+			{	
+				if (3 > 2)
+				break; //break虽然是if内部的语句，但break终止的确实外部的for循环
+				printf("嘿嘿!\n");
+
+			}
+
+		2〉break只能用于终止距离它最近的for循环：
+		例子：
+		for (i=0; i<3; ++i)
+		{
+			for (j=1; j<4; ++j)
+			break; //break只能终止距离它最近的循环
+			printf("同志们好!\n");
+		}
+
+		3〉在多层switch嵌套中，break只能终止距离它最近的switch语句
+		例子：
+		switch(x) //第一个switch
+		{
+		case 1:
+			switch(y) //第二个switch
+			{
+				case 0:
+				a++;
+				break;
+				case 1:
+				b++;
+				break;
+			}
+			b = 100;
+			break; //终止的是第一个switch
+		
+			case 2:
+			a++;
+			b++;
+			break;
+		}
+
+*continue语句：
+	 	用于跳过本次循环余下的语句
+		转去判断是否需要执行下次的循环
+		例子：
+		a):
+		for (1; 2; 3)
+		{
+			A;
+			B;
+			continue;//如果执行该语句，则执行完该语句，会执行3,C D语句不会被执行
+			C;
+			D;
+		}
+		
+		b):
+		while (表达式)
+		{
+			A;
+			B;
+			continue;//如果执行该语句，则执行完该语句，会执行表达式,C D语句不会被执行
+			C;
+			D;
+		}	

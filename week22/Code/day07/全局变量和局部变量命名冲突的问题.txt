@@ -1,0 +1,15 @@
+﻿# include <stdio.h>
+
+int i = 55;
+
+void f(int i)
+{
+	printf("i = %d\n", i);
+}
+
+int main(void)
+{
+	f(5); //局部变量5会屏蔽掉全局变量int i = 55
+
+	return 0;
+}

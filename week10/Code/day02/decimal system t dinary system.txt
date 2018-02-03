@@ -1,0 +1,18 @@
+﻿#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    char bs[33];
+    char b[33];
+    char s[4];
+    
+
+	i=1024;
+    ltoa(i,b,2);
+    sprintf(bs,"%032s",b);
+    printf("i=%d,bs=%s\n",i,bs);
+
+	return 0;
+}
